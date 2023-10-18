@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000723;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.navbar {
+  background-color: rgba(244, 116, 128, 1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item {
+  margin: 0 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #00bcd4;
+}
+
+.error-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.error-heading {
+  font-size: 24px;
+  color: #ff3333;
+  margin: 20px 0;
+}
+
+.error-message {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.error-image {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-image img {
+  max-width: 100%;
+  height: auto;
+}
+.counter-container {
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+}
+
+.counter-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 34px 5px 5px 5px;
+  cursor: pointer;
+}
+
+.custom-value-container {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 300px;
+  height: 25px;
+  border-radius: 8px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.not-found-container {
+  background-color: white;
+  color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.not-found-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.not-found-message {
+  font-size: 18px;
+  max-width: 400px;
 }
