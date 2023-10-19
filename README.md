@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+***React Counter App with Error Handling***
+  
+  This is a simple React application that demonstrates a counter with error handling.
+  The app allows you to increment, decrement, reset the counter, set a custom value, and trigger an error page when an error occurs.
+  
+**To see a live demo of the application, you can visit (add netlify link)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Features**
+ 1. Increment and decrement the counter.
+ 2. Reset the counter to its initial value.
+ 3. Set a custom value for the counter.
+ 4. Error handling with a friendly error page.
+ 5. Navigate between different views using React Router.
+    
+**Run app locally**
+ #Before you begin, ensure you have the following prerequisites:
+  1. Node.js: Make sure you have Node.js installed on your system. You can download it from nodejs.org.
+  2. npm or Yarn - Package managers for installing dependencies.
+**After which you:**
+  1. Clone the repository:
+  2.Install the project dependencies.
 
-## Available Scripts
+**Usage**
+ **To start the application locally, run the following command:**
+   - run `npm start`, `yarn start`
+     
+**Folder Structure**
+The project structure is organised as follows:
+  `src/`: Contains the source code of the application.
+  `components/`: React components used in the app.
+  `App.js`: The main application component.
+  `public/`: Contains the public assets and HTML template.
+  `package.json`: Lists the project dependencies and scripts.
+  `README.md/`: The documentation file.
+  
+**Counter**
+The primary feature of this application is the counter. You can perform the following actions:
+1. Click "+" to increase the counter by 1.
+2.Click "-" to decrease the counter by 1.
+3.Click "Reset" to reset the counter to its initial value.
+4.Use the input field to set a custom value and click "Set Custom Value" to update the counter.
 
-In the project directory, you can run:
+**Error Handling**
+The application includes error handling. When an error occurs, i.e if you click on the `Trigger an error button` it navigates to an error page (`/error`) with an apologetic cat image and a message. You can customise the error page in the ErrorBoundary.js component.
 
-### `npm start`
+**404 Handling**
+The application includes handling scenarios where the user can use an invalid url. When this occurs, it navigates to a not found page with a message. You can customise this page in the NotFound.js component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Technologies Used**
+`React`: A JavaScript library for building user interfaces.
+`React router`: A library for handling routing in React applications.
